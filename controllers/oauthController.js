@@ -10,8 +10,8 @@ class OAuthController {
         provider: 'google'
       });
 
-      const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
-      res.redirect(`${frontendUrl}/auth/success?token=${token}`);
+      const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3001';
+      res.redirect(`${frontendUrl}/oauth/callback?token=${token}`);
     } catch (error) {
       console.error("Erreur génération token OAuth:", error);
       res.redirect("/auth/failure");

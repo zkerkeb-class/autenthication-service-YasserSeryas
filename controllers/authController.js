@@ -10,6 +10,7 @@ class AuthController {
       
       res.json({
         token: result.token,
+        data: result.user,
         message: "Connexion réussie ✅"
       });
     } catch (error) {
