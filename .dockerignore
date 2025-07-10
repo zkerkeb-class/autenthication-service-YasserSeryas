@@ -1,0 +1,19 @@
+# Fichiers et dossiers à ignorer par Docker
+node_modules
+npm-debug.log
+.npm
+.env
+.env.local
+.env.production
+.git
+.gitignore
+README.md
+.nyc_output
+coverage
+.cache
+dist
+.DS_Store
+*.log
+logs
+*.tgz
+.vscode
